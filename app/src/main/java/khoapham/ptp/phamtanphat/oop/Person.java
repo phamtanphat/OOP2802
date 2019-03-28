@@ -6,9 +6,14 @@ public class Person {
     public int tuoi;
 //    static String kieuconnguoi = "Con nguoi";
 
-
+    //constructor ròng mac dinh deu co
+    public Person(String ten, int tuoi){
+        this.ten = ten;
+        this.tuoi = tuoi;
+    }
     // hanh vi
     // to hop phim nhanh alt + insert
+
 
 
     public String getTen() {
