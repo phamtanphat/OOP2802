@@ -5,7 +5,7 @@ import android.os.Bundle;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
-    
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -16,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
 //        Person.tuoi //sai
 //        nguyenvana.tuoi // dung
 //        Person.kieuconnguoi // static
-
+        nguyenvana.ten = "Nguyen Van B";
         Person nguyenvanb = new Person();
     }
 }
