@@ -4,12 +4,14 @@ public class Person {
 
     public String ten;
     public int tuoi;
+    Animal animal;
 //    static String kieuconnguoi = "Con nguoi";
 
     //constructor ròng mac dinh deu co
-    public Person(String ten, int tuoi){
+    public Person(String ten, int tuoi , Animal animal){
         this.ten = ten;
         this.tuoi = tuoi;
+        this.animal = animal;
     }
     // hanh vi
     // to hop phim nhanh alt + insert

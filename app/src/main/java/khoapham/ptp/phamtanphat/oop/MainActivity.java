@@ -35,10 +35,13 @@ public class MainActivity extends AppCompatActivity {
         //Tinh da hinh : overide(ghi de) overload(phuong thuc nap chong)
 
 //        show("xin chao");
-            Person conguoi = new Person("Nguyen Van A",25);
-            conguoi.setTen("Nguyen van B");
+
             Animal concho = new Animal("Con cho",4);
             concho.setTen("Con meo" , this);
+            Person conguoi = new Person("Nguyen Van A",25,concho);
+            conguoi.setTen("Nguyen van B");
+            conguoi.animal.getTen();
+
     }
     // phuong nap chong
 //    public void show(String text){
