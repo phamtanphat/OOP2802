@@ -13,9 +13,6 @@ public class Person {
     }
     // hanh vi
     // to hop phim nhanh alt + insert
-
-
-
     public String getTen() {
         return ten;
     }

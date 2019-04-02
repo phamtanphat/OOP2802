@@ -29,9 +29,23 @@ public class MainActivity extends AppCompatActivity {
 //        a[0] = 6;
 //        Log.d("BBB",a[0] + " ");
 
-        Animal concho = new Animal();
-        concho.ten = "con cho";
-        concho.tuoi = 4;
+//        Animal concho = new Animal();
+//        concho.ten = "con cho";
+//        concho.tuoi = 4;
+        //Tinh da hinh : overide(ghi de) overload(phuong thuc nap chong)
 
+//        show("xin chao");
+            Person conguoi = new Person("Nguyen Van A",25);
+            conguoi.setTen("Nguyen van B");
+            Animal concho = new Animal("Con cho",4);
+            concho.setTen("Con meo" , this);
     }
+    // phuong nap chong
+//    public void show(String text){
+//        Toast.makeText(this, text, Toast.LENGTH_SHORT).show();
+//    }
+//    public void show(int number){
+//        Toast.makeText(this, number + "", Toast.LENGTH_SHORT).show();
+//    }
+
 }
