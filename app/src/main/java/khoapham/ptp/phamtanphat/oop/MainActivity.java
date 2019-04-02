@@ -5,6 +5,10 @@ import android.os.Bundle;
 import android.util.Log;
 import android.widget.Toast;
 
+import java.sql.Array;
+import java.util.ArrayList;
+import java.util.Arrays;
+
 public class MainActivity extends AppCompatActivity {
 
 
@@ -12,17 +16,22 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        final  int[] a = {1,2,3,4,5};
+//        final  int[] a = {1,2,3,4,5};
         //1 : Doi tuong
         //2 : thuoc tinh va hanh vi
-        Person nguyenvana = new Person("nguyen van A",15);
+//        Person nguyenvana = new Person("nguyen van A",15);
 //        Person.tuoi //sai
 //        nguyenvana.tuoi // dung
 //        Person.kieuconnguoi // static
-        Person nguyenvanb = new Person("nguyen van b",20);
+//        Person nguyenvanb = new Person("nguyen van b",20);
 
         //3 : non accessmodifier : static
-        a[0] = 6;
-        Log.d("BBB",a[0] + " ");
+//        a[0] = 6;
+//        Log.d("BBB",a[0] + " ");
+
+        Animal concho = new Animal();
+        concho.ten = "con cho";
+        concho.tuoi = 4;
+
     }
 }
