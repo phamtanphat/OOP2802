@@ -12,63 +12,59 @@ import java.sql.Array;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-public class MainActivity extends AppCompatActivity implements Listenvalue{
+public class MainActivity extends AppCompatActivity {
 
-    TextView  txtView;
-    Button btn1;
-    Listenvalue listenvalue;
-    int a = 10;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-//        final  int[] a = {1,2,3,4,5};
-        //1 : Doi tuong
-        //2 : thuoc tinh va hanh vi
-//        Person nguyenvana = new Person("nguyen van A",15);
-//        Person.tuoi //sai
-//        nguyenvana.tuoi // dung
-//        Person.kieuconnguoi // static
-//        Person nguyenvanb = new Person("nguyen van b",20);
-
-        //3 : non accessmodifier : static
-//        a[0] = 6;
-//        Log.d("BBB",a[0] + " ");
-
-//        Animal concho = new Animal();
-//        concho.ten = "con cho";
-//        concho.tuoi = 4;
-        //Tinh da hinh : overide(ghi de) overload(phuong thuc nap chong)
-
-//        show("xin chao");
-
-//        Animal concho = new Animal("Con cho",4);
-//        concho.setTen("Con meo" , this);
-//        Person conguoi = new Person("Nguyen Van A",25,concho);
-//        conguoi.setTen("Nguyen van B");
-//        conguoi.animal.getTen();
-        listenvalue = this;
-        txtView = findViewById(R.id.textviewa);
-        btn1 = findViewById(R.id.buttonSetvalue);
-
-        btn1.setOnClickListener(new View.OnClickListener() {
+        tinhtoan(new Listen() {
             @Override
-            public void onClick(View v) {
-                listenvalue.setvalue(a++ + "");
+            public boolean ketqua(int i) {
+                if( Math.sqrt(i) % 1 == 0){
+                    return true;
+                }else{
+                    return false;
+                }
+
             }
         });
     }
-
-    @Override
-    public void setvalue(String ten) {
-        txtView.setText(ten);
+    public void insochan(){
+        for (int i = 0 ; i <= 100; i++){
+           if(i % 2 == 0){
+               Log.d("BBB", i + "");
+           }
+        }
     }
-    // phuong nap chong
-//    public void show(String text){
-//        Toast.makeText(this, text, Toast.LENGTH_SHORT).show();
-//    }
-//    public void show(int number){
-//        Toast.makeText(this, number + "", Toast.LENGTH_SHORT).show();
-//    }
-
+    public void insole(){
+        for (int i = 0 ; i <= 100; i++){
+            if(i % 2 == 1){
+                Log.d("BBB", i + "");
+            }
+        }
+    }
+    public void insochia3du1(){
+        for (int i = 0 ; i <= 100; i++){
+            if(i % 3 == 1){
+                Log.d("BBB", i + "");
+            }
+        }
+    }
+    public void insochinhphuong(){
+        for (int i = 0 ; i <= 100; i++){
+            if(Math.sqrt(i) % 1 == 0){
+                Log.d("BBB", i + "");
+            }
+        }
+    }
+    public void tinhtoan(Listen listen){
+        for (int i = 0 ; i <= 100; i++){
+            boolean dk = listen.ketqua(i);
+            if(dk){
+                Log.d("BBB", i + "");
+            }
+        }
+    }
 }
