@@ -23,6 +23,10 @@ public class MainActivity extends AppCompatActivity {
         User.Builder builder = new User.Builder();
         builder.setTen("Nguyen Van A");
         Log.d("BBB",builder.getTen());
+
+        RequestHttp requestHttp = RequestHttp.getInstance("zing.vn");
+        RequestHttp requestHttp1 = RequestHttp.getInstance("xinchao");
+        Log.d("BBB",requestHttp1.getUrl());
 //
     }
 //    tinhtoan(new Listen() {
